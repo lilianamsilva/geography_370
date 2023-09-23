@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +28,7 @@
       var map = L.map('map', { attributionControl: false } ).setView([35.904628495662294, -79.04737634150447], 14.0);
       L.control.attribution( { prefix: false } ).addTo( map );
       
-      var tilesource_layer = L.tileLayer('file:////Users/lilianasilva/Documents/Fall_2023_Geog_370/geography_370/Homework%204/Unc_Tiles1/{z}/{x}/{y}.png', {
+      var tilesource_layer = L.tileLayer('./Unc_Tiles1/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
